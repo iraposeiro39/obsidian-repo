@@ -5,9 +5,10 @@
 - [x] Configurar DHCP para rede 10.0.0.0/24 (mínimo 100 computadores)
 - [x] Configurar redundância com failover usando CARP
 - [ ] Configurar OpenVPN com autenticação RADIUS para acesso remoto
-- [ ] Configurar site-to-site OpenVPN para Oslo
-- [ ] Configurar IPSec para Brussels
-- [ ] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
+- [x] Configurar site-to-site OpenVPN para Oslo
+- [x] Configurar IPSec para Brussels
+- [x] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
+- [x] Configurar Rotas estáticas
 - [ ] Configurar IP blocklist a partir dos feeds do MISP
 - [ ] Bloquear domínios .ru e .cn
 - [ ] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
@@ -18,19 +19,19 @@
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar domínio arrow.internal
 - [x] Activar DNSSEC em todos os domínios e subdomínios
-- [ ] Criar GPO para forçar DNSSEC nos endpoints
-- [ ] Instalar e configurar RADIUS
-- [ ] Criar utilizadores nas OUs:
-    - [ ] Cyber: Nuno Romão, Rodrigo Oliveira, Tiago Cardoso
-    - [ ] Accounting: Maria da Fé, Fábia Berbigão
-    - [ ] HelpDesk: Fernando Ramires, Nuno Ramos
+- [x] Criar utilizadores nas OUs:
+    - [x] Cyber: Nuno Romão, Rodrigo Oliveira, Tiago Cardoso
+    - [x] Accounting: Maria da Fé, Fábia Berbigão
+    - [x] HelpDesk: Fernando Ramires, Nuno Ramos
+- [x] Criar GPO para forçar DNSSEC nos endpoints
+- [x] Instalar e configurar RADIUS
 - [ ] Criar grupo de segurança vpn.users (com users tiago.cardoso, nuno.romao e rodrigo.oliveira)
 
 ### Active Directory Failover
 
 - [x] Instalar Windows Server (mesma versão do DC principal)
 - [x] Configurar como DC secundário
-- [ ] Verificar replicação automática de utilizadores e serviços
+- [x] Verificar replicação automática de utilizadores e serviços
 - [ ] Testar autenticação com DC principal offline
 
 ### Windows Server Deployment Services / File Sharing
@@ -118,8 +119,8 @@
 ### PfSense / OPNSense / Checkpoint
 
 - [x] Configurar DHCP para rede 10.2.2.0/24
-- [ ] Configurar ligação IPSec com Durham
-- [ ] Configurar rotas e firewall rules
+- [x] Configurar ligação IPSec com Durham
+- [x] Configurar rotas e firewall rules
 - [ ] Permitir acesso remoto VPN à rede ADM de Brussels
 
 ### Windows Server Core - Active Directory
@@ -128,6 +129,7 @@
 - [x] Configurar domínio black.internal
 - [x] Configura os Forwarders
 - [x] Activar DNSSEC em todos os domínios e subdomínios
+- [x] Criar GPO para forçar DNSSEC nos endpoints
 
 ### MISP - Cyber Threat Intelligence Platform
 
@@ -207,16 +209,17 @@
 ### PfSense
 
 - [x] Configurar DHCP para rede 10.3.3.0/24
-- [ ] Configurar ligação site-to-site OpenVPN com Durham
-- [ ] Configurar rotas e firewall rules
+- [x] Configurar ligação site-to-site OpenVPN com Durham
+- [x] Configurar rotas e firewall rules
 
 ### Active Directory Domain Controller
 
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar domínio defense.internal
-- [ ] Mete os forwarders
-- [ ] Criar utilizadores conforme definido pela equipa
-- [ ] Activar DNSSEC em todos os domínios e subdomínios
+- [x] Mete os forwarders
+- [ ] Criar o user cybersqladmin
+- [x] Activar DNSSEC em todos os domínios e subdomínios
+- [x] Criar GPO para forçar DNSSEC nos endpoints
 
 
 ### Vulnerability Management (OpenVAS/Nessus + DefectDojo)
