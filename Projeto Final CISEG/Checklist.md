@@ -2,6 +2,7 @@
 ## Durham
 ### PfSense One & Two (Firewalls)
 
+- [x] Configurar DHCP para rede 10.0.0.0/24 (mínimo 100 computadores)
 - [x] Configurar redundância com failover usando CARP
 - [ ] Configurar OpenVPN com autenticação RADIUS para acesso remoto
 - [ ] Configurar site-to-site OpenVPN para Oslo
@@ -16,12 +17,12 @@
 
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar domínio arrow.internal
-- [ ] Activar DNSSEC em todos os domínios e subdomínios
+- [x] Activar DNSSEC em todos os domínios e subdomínios
 - [ ] Criar GPO para forçar DNSSEC nos endpoints
 - [ ] Instalar e configurar RADIUS
 - [ ] Criar grupo de segurança vpn.users
 - [ ] Criar utilizadores: tiago.cardoso, nuno.romao, rodrigo.oliveira
-- [ ] Configurar DHCP para rede 10.0.0.0/24 (mínimo 100 computadores)
+
 
 ### Active Directory Failover
 
@@ -114,15 +115,17 @@
 
 ### PfSense / OPNSense / Checkpoint
 
+- [x] Configurar DHCP para rede 10.2.2.0/24
 - [ ] Configurar ligação IPSec com Durham
 - [ ] Configurar rotas e firewall rules
 - [ ] Permitir acesso remoto VPN à rede ADM de Brussels
 
 ### Windows Server Core - Active Directory
 
-- [ ] Instalar Windows Server Core 2019/2022/2025
-- [ ] Configurar domínio black.internal
-- [ ] Configurar DHCP para rede 10.2.2.0/24
+- [x] Instalar Windows Server Core 2019/2022/2025
+- [x] Configurar domínio black.internal
+- [x] Configura os Forwarders
+- [x] Activar DNSSEC em todos os domínios e subdomínios
 
 ### MISP - Cyber Threat Intelligence Platform
 
@@ -193,22 +196,26 @@
 
 ### PC03 (Endpoint Brussels)
 
-- [ ] Seguir configuração de endpoints Durham
+- [x] Mete no domínio black.internal
+- [x] Instala as RSAT Tools
 
 ---
 ## Oslo
 
 ### PfSense
 
+- [x] Configurar DHCP para rede 10.3.3.0/24
 - [ ] Configurar ligação site-to-site OpenVPN com Durham
 - [ ] Configurar rotas e firewall rules
 
 ### Active Directory Domain Controller
 
-- [ ] Instalar Windows Server 2019/2022/2025
-- [ ] Configurar domínio defense.internal
+- [x] Instalar Windows Server 2019/2022/2025
+- [x] Configurar domínio defense.internal
+- [ ] Mete os forwarders
 - [ ] Criar utilizadores conforme definido pela equipa
-- [ ] Configurar DHCP para rede 10.3.3.0/24
+- [ ] Activar DNSSEC em todos os domínios e subdomínios
+
 
 ### Vulnerability Management (OpenVAS/Nessus + DefectDojo)
 
@@ -274,7 +281,7 @@
 
 ### PC04 (Endpoint Oslo)
 
-- [ ] Seguir configuração de endpoints Durham
+- [ ] Mete no domínio defense.internal
  ---
 
 ## Exercício de Simulação de Ataque e Resposta a Incidentes
