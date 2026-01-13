@@ -36,13 +36,13 @@
 
 ### Windows Server Deployment Services / File Sharing
 
-- [ ] Instalar Windows Server 2019/2022/2025
-- [ ] Configurar WDS com Windows 10 ou 11 Professional
-- [ ] Testar boot PXE dos endpoints
-- [ ] Criar shared folders encriptadas:
-    - [ ] Cyber: Nuno Romão, Rodrigo Oliveira, Tiago Cardoso
-    - [ ] Accounting: Maria da Fé, Fábia Berbigão
-    - [ ] HelpDesk: Fernando Ramires, Nuno Ramos
+- [x] Instalar Windows Server 2019/2022/2025
+- [x] Configurar WDS com Windows 10 ou 11 Professional
+- [x] Testar boot PXE dos endpoints
+- [x] Criar shared folders encriptadas:
+    - [x] Cyber: Nuno Romão, Rodrigo Oliveira, Tiago Cardoso
+    - [x] Accounting: Maria da Fé, Fábia Berbigão
+    - [x] HelpDesk: Fernando Ramires, Nuno Ramos
 - [ ] Garantir encriptação SMB nas ligações
 
 ### Root Certification Authority (standalone)
