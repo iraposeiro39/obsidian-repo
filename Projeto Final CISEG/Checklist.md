@@ -47,17 +47,17 @@
 
 ### Root Certification Authority (standalone)
 
-- [ ] Instalar Windows Server 2019/2022/2025 (NÃO juntar ao domínio)
-- [ ] Instalar Certificate Services como Root CA
-- [ ] Estabelecer relação de confiança com PKI server
-- [ ] NÃO emitir certificados directamente
+- [x] Instalar Windows Server 2019/2022/2025 (NÃO juntar ao domínio)
+- [x] Instalar Certificate Services como Root CA
+- [x] Estabelecer relação de confiança com PKI server
+- [x] NÃO emitir certificados directamente
 
 ### Public Key Infrastructure Server
 
-- [ ] Instalar Windows Server 2019/2022/2025
-- [ ] Instalar Certificate Services com web enrollment
-- [ ] Configurar emissão automática de certificados para computadores e utilizadores AD
-- [ ] Verificar hierarquia correcta dos certificados (PKI -> RootCA)
+- [x] Instalar Windows Server 2019/2022/2025
+- [x] Instalar Certificate Services com web enrollment
+- [x] Configurar emissão automática de certificados para computadores e utilizadores AD
+- [x] Verificar hierarquia correcta dos certificados (PKI -> RootCA)
 - [ ] Emitir certificados para todas as aplicações web
 
 ### Veeam Backup Server
