@@ -24,14 +24,14 @@
     - [x] Accounting: Maria da Fé, Fábia Berbigão
     - [x] HelpDesk: Fernando Ramires, Nuno Ramos
 - [x] Criar GPO para forçar DNSSEC nos endpoints
-- [x] Instalar e configurar RADIUS
+- [ ] Instalar e configurar RADIUS
 - [ ] Criar grupo de segurança vpn.users (com users tiago.cardoso, nuno.romao e rodrigo.oliveira)
 
 ### Active Directory Failover
 
 - [x] Instalar Windows Server (mesma versão do DC principal)
 - [x] Configurar como DC secundário
-- [x] Verificar replicação automática de utilizadores e serviços
+- [ ] Verificar replicação automática de utilizadores e serviços
 - [ ] Testar autenticação com DC principal offline
 
 ### Windows Server Deployment Services / File Sharing
