@@ -43,7 +43,7 @@
     - [x] Cyber: Nuno Romão, Rodrigo Oliveira, Tiago Cardoso
     - [x] Accounting: Maria da Fé, Fábia Berbigão
     - [x] HelpDesk: Fernando Ramires, Nuno Ramos
-- [ ] Garantir encriptação SMB nas ligações
+- [x] Garantir encriptação SMB nas ligações
 
 ### Root Certification Authority (standalone)
 
