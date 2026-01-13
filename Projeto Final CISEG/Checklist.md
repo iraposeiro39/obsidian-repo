@@ -20,9 +20,11 @@
 - [x] Activar DNSSEC em todos os domínios e subdomínios
 - [ ] Criar GPO para forçar DNSSEC nos endpoints
 - [ ] Instalar e configurar RADIUS
-- [ ] Criar grupo de segurança vpn.users
-- [ ] Criar utilizadores: tiago.cardoso, nuno.romao, rodrigo.oliveira
-
+- [ ] Criar utilizadores nas OUs:
+    - [ ] Cyber: Nuno Romão, Rodrigo Oliveira, Tiago Cardoso
+    - [ ] Accounting: Maria da Fé, Fábia Berbigão
+    - [ ] HelpDesk: Fernando Ramires, Nuno Ramos
+- [ ] Criar grupo de segurança vpn.users (com users tiago.cardoso, nuno.romao e rodrigo.oliveira)
 
 ### Active Directory Failover
 
