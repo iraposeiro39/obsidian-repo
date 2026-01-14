@@ -191,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,7 +205,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "554576e44b9cf79b",
+  "active": "4555b251812de9c1",
   "lastOpenFiles": [
     "Projeto Final CISEG/IPs.md",
     "Projeto Final CISEG/Checklist.md",
