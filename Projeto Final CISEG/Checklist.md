@@ -9,6 +9,7 @@
 - [x] Configurar IPSec para Brussels
 - [x] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
 - [x] Configurar Rotas estáticas
+- [ ] Ambas WebUIs da PfSense têm de estar certificadas
 - [ ] Configurar IP blocklist a partir dos feeds do MISP
 - [ ] Bloquear domínios .ru e .cn
 - [ ] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
