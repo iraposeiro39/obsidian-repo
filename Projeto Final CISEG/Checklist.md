@@ -9,7 +9,7 @@
 - [x] Configurar IPSec para Brussels
 - [x] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
 - [x] Configurar Rotas estáticas
-- [ ] Configurar certificação HTTPS
+- [x] Configurar certificação HTTPS
 - [ ] Configurar IP blocklist a partir dos feeds do MISP
 - [ ] Bloquear domínios .ru e .cn
 - [ ] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
@@ -72,7 +72,6 @@
 
 - [ ] Instalar Rocky Linux ou RHEL
 - [ ] Instalar e configurar Zabbix Server
-- [ ] Configurar certificação HTTPS
 - [ ] Enrollar todos os servidores de Durham, Brussels e Oslo
 - [ ] Configurar monitorização de disponibilidade, performance e recursos
 
@@ -123,8 +122,8 @@
 - [x] Configurar DHCP para rede 10.2.2.0/24
 - [x] Configurar ligação IPSec com Durham
 - [x] Configurar rotas e firewall rules
-- [ ] Configurar certificação HTTPS
-- [ ] Permitir acesso remoto VPN à rede ADM de Brussels
+- [x] Configurar certificação HTTPS
+- [x] Permitir acesso remoto VPN à rede ADM de Brussels
 
 ### Windows Server Core - Active Directory
 
@@ -214,7 +213,7 @@
 - [x] Configurar DHCP para rede 10.3.3.0/24
 - [x] Configurar ligação site-to-site OpenVPN com Durham
 - [x] Configurar rotas e firewall rules
-- [ ] Configurar certificação HTTPS
+- [x] Configurar certificação HTTPS
 
 ### Active Directory Domain Controller
 
