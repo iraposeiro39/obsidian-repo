@@ -9,7 +9,7 @@
 - [x] Configurar IPSec para Brussels
 - [x] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
 - [x] Configurar Rotas estáticas
-- [ ] Ambas WebUIs da PfSense têm de estar certificadas
+- [ ] Configurar certificação HTTPS
 - [ ] Configurar IP blocklist a partir dos feeds do MISP
 - [ ] Bloquear domínios .ru e .cn
 - [ ] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
@@ -25,15 +25,15 @@
     - [x] Accounting: Maria da Fé, Fábia Berbigão
     - [x] HelpDesk: Fernando Ramires, Nuno Ramos
 - [x] Criar GPO para forçar DNSSEC nos endpoints
-- [ ] Instalar e configurar RADIUS
-- [ ] Criar grupo de segurança vpn.users (com users tiago.cardoso, nuno.romao e rodrigo.oliveira)
+- [x] Instalar e configurar RADIUS
+- [x] Criar grupo de segurança vpn.users (com users tiago.cardoso, nuno.romao e rodrigo.oliveira)
 
 ### Active Directory Failover
 
 - [x] Instalar Windows Server (mesma versão do DC principal)
 - [x] Configurar como DC secundário
-- [ ] Verificar replicação automática de utilizadores e serviços
-- [ ] Testar autenticação com DC principal offline
+- [x] Verificar replicação automática de utilizadores e serviços
+- [x] Testar autenticação com DC principal offline
 
 ### Windows Server Deployment Services / File Sharing
 
@@ -72,6 +72,7 @@
 
 - [ ] Instalar Rocky Linux ou RHEL
 - [ ] Instalar e configurar Zabbix Server
+- [ ] Configurar certificação HTTPS
 - [ ] Enrollar todos os servidores de Durham, Brussels e Oslo
 - [ ] Configurar monitorização de disponibilidade, performance e recursos
 
@@ -122,6 +123,7 @@
 - [x] Configurar DHCP para rede 10.2.2.0/24
 - [x] Configurar ligação IPSec com Durham
 - [x] Configurar rotas e firewall rules
+- [ ] Configurar certificação HTTPS
 - [ ] Permitir acesso remoto VPN à rede ADM de Brussels
 
 ### Windows Server Core - Active Directory
@@ -212,6 +214,7 @@
 - [x] Configurar DHCP para rede 10.3.3.0/24
 - [x] Configurar ligação site-to-site OpenVPN com Durham
 - [x] Configurar rotas e firewall rules
+- [ ] Configurar certificação HTTPS
 
 ### Active Directory Domain Controller
 
