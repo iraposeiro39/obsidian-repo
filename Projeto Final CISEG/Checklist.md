@@ -68,10 +68,10 @@ Desativa o IPv6 em todas as máquinas Windows
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Instalar Veeam Backup
 - [ ] Configurar backup da pasta Desktop de TODAS as Workstations
-	- [ ] PC01 (DH)
-	- [ ] PC02 (DH)
+	- [x] PC01 (DH)
+	- [x] PC02 (DH)
 	- [ ] PC03 (BR)
-	- [ ] PC04 (OL)
+	- [x] PC04 (OL)
 
 ### Zabbix Monitoring Server
 
@@ -98,7 +98,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Web Server IIS (DMZ - 192.168.10.0/24)
 
-- [ ] Instalar Windows Server 2019/2022/2025
+- [x] Instalar Windows Server 2019/2022/2025
 - [ ] Configurar IIS para [www.black.pt](http://www.black.pt) e [www.arrow.com](http://www.arrow.com)
 - [ ] Usar apenas TLS 1.2 (obrigatório) e TLS 1.3 (opcional)
 - [ ] Usar apenas ciphers fortes
@@ -110,7 +110,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Web Application Firewall (DMZ)
 
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [ ] Instalar ModSecurity com OWASP Core Rule Sets actualizados
 - [ ] Configurar modo de bloqueio (NÃO DetectionOnly)
 - [ ] Testar detecção e bloqueio de vulnerabilidades web
