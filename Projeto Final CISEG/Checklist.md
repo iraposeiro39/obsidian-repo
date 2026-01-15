@@ -1,4 +1,6 @@
 # Checklist de Implementação
+Mete conditional forwarders em todas as ADs
+Desativa o IPv6 em todas as máquinas Windows
 ## Durham
 ### PfSense One & Two (Firewalls)
 
@@ -63,16 +65,35 @@
 
 ### Veeam Backup Server
 
-- [ ] Instalar Windows Server 2019/2022/2025
-- [ ] Instalar Veeam Backup
-- [ ] Configurar backup de desktops das workstations dos auditores
-- [ ] Configurar backup para Durham, Brussels e Oslo
+- [x] Instalar Windows Server 2019/2022/2025
+- [x] Instalar Veeam Backup
+- [ ] Configurar backup da pasta Desktop de TODAS as Workstations
+	- [ ] PC01 (DH)
+	- [ ] PC02 (DH)
+	- [ ] PC03 (BR)
+	- [ ] PC04 (OL)
 
 ### Zabbix Monitoring Server
 
-- [ ] Instalar Rocky Linux ou RHEL
-- [ ] Instalar e configurar Zabbix Server
+- [x] Instalar Rocky Linux ou RHEL
+- [x] Instalar e configurar Zabbix Server
+- [x] Criar todas as entradas no zabbix
 - [ ] Enrollar todos os servidores de Durham, Brussels e Oslo
+	- [x] DC01_DH
+	- [x] DC02_DH
+	- [x] WDS_DH
+	- [x] RootCA_DH
+	- [x] PKI_DH
+	- [x] VEEAM_DH
+	- [x] ADCore_BR
+	- [ ] MISP_BR
+	- [ ] IMS_BR
+	- [ ] Velociraptor_BR
+	- [ ] SIEM_BR
+	- [x] AD_OL
+	- [ ] VulnMgmt_OL
+	- [ ] Trellix_OL
+	- [ ] Wazuh_OL
 - [ ] Configurar monitorização de disponibilidade, performance e recursos
 
 ### Web Server IIS (DMZ - 192.168.10.0/24)
