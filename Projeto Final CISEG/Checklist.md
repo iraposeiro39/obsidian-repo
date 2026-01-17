@@ -4,6 +4,7 @@ Desativa o IPv6 em todas as máquinas Windows
 ## Durham
 ### PfSense One & Two (Firewalls)
 
+- [x] Fazer as VMs
 - [x] Configurar DHCP para rede 10.0.0.0/24 (mínimo 100 computadores)
 - [x] Configurar redundância com failover usando CARP
 - [ ] Configurar OpenVPN com autenticação RADIUS para acesso remoto
@@ -12,13 +13,14 @@ Desativa o IPv6 em todas as máquinas Windows
 - [x] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
 - [x] Configurar Rotas estáticas
 - [x] Configurar certificação HTTPS
-- [ ] Configurar IP blocklist a partir dos feeds do MISP
+- [x] Configurar IP blocklist a partir dos feeds do MISP
 - [ ] Bloquear domínios .ru e .cn
 - [ ] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
 - [ ] Deixar inicialmente em modo de monitorização
 
 ### Active Directory Domain Controller
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar domínio arrow.internal
 - [x] Activar DNSSEC em todos os domínios e subdomínios
@@ -32,6 +34,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Active Directory Failover
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server (mesma versão do DC principal)
 - [x] Configurar como DC secundário
 - [x] Verificar replicação automática de utilizadores e serviços
@@ -39,6 +42,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Windows Server Deployment Services / File Sharing
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar WDS com Windows 10 ou 11 Professional
 - [x] Testar boot PXE dos endpoints
@@ -50,6 +54,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Root Certification Authority (standalone)
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025 (NÃO juntar ao domínio)
 - [x] Instalar Certificate Services como Root CA
 - [x] Estabelecer relação de confiança com PKI server
@@ -57,6 +62,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Public Key Infrastructure Server
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Instalar Certificate Services com web enrollment
 - [x] Configurar emissão automática de certificados para computadores e utilizadores AD
@@ -65,16 +71,18 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Veeam Backup Server
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Instalar Veeam Backup
-- [ ] Configurar backup da pasta Desktop de TODAS as Workstations
+- [x] Configurar backup da pasta Desktop de TODAS as Workstations
 	- [x] PC01 (DH)
 	- [x] PC02 (DH)
-	- [ ] PC03 (BR)
+	- [x] PC03 (BR)
 	- [x] PC04 (OL)
 
 ### Zabbix Monitoring Server
 
+- [x] Fazer a VM
 - [x] Instalar Rocky Linux ou RHEL
 - [x] Instalar e configurar Zabbix Server
 - [x] Criar todas as entradas no zabbix
@@ -98,6 +106,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Web Server IIS (DMZ - 192.168.10.0/24)
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
 - [ ] Configurar IIS para [www.black.pt](http://www.black.pt) e [www.arrow.com](http://www.arrow.com)
 - [ ] Usar apenas TLS 1.2 (obrigatório) e TLS 1.3 (opcional)
@@ -110,6 +119,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Web Application Firewall (DMZ)
 
+- [x] Fazer a VM
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [ ] Instalar ModSecurity com OWASP Core Rule Sets actualizados
 - [ ] Configurar modo de bloqueio (NÃO DetectionOnly)
@@ -117,9 +127,10 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Windows 10/11 Endpoints (PC01, PC02)
 
+- [x] Fazer as VMs
 - [ ] Implementar Microsoft Security Baseline via GPO
-- [ ] Bloquear command line, registry e control panel para não-admins
-- [ ] Configurar background desktop padrão
+- [x] Bloquear command line, registry e control panel para não-admins
+- [x] Configurar background desktop padrão
 - [ ] Instalar e configurar Sysmon (enviar logs para SIEM)
 - [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
 - [ ] Instalar WAZUH agent
@@ -131,15 +142,15 @@ Desativa o IPv6 em todas as máquinas Windows
     - [ ] Adaptive Threat Protection
     - [ ] Data Loss Prevention
     - [ ] Drive Encryption
-- [ ] Configurar DLP para bloquear impressão de documentos classificados
-- [ ] Instalar Remote Server Administration Tools
-- [ ] Permitir que todos os utilizadores Cyber + utilizador local desencriptem disco
+- [x] Instalar Remote Server Administration Tools
+- [ ] Permitir que todos os utilizadores do grupo Cyber possam desencriptar o disco ao ligar o pc
 
 ---
 ## Brussels
 
 ### PfSense / OPNSense / Checkpoint
 
+- [x] Fazer a VM
 - [x] Configurar DHCP para rede 10.2.2.0/24
 - [x] Configurar ligação IPSec com Durham
 - [x] Configurar rotas e firewall rules
@@ -148,6 +159,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Windows Server Core - Active Directory
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server Core 2019/2022/2025
 - [x] Configurar domínio black.internal
 - [x] Configura os Forwarders
@@ -156,16 +168,18 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### MISP - Cyber Threat Intelligence Platform
 
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar MISP com feeds actualizados
-- [ ] Activar feeds de IPs e domínios maliciosos
-- [ ] Gerar blocklist para PfSense Durham
-- [ ] Configurar feed customizado
+- [x] Fazer a VM
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar MISP com feeds actualizados
+- [x] Activar feeds de IPs e domínios maliciosos
+- [x] Gerar blocklist para PfSense Durham
 - [ ] Integrar com Incident Management Platform
 - [ ] Configurar forwarding de IOCs
+- [ ] Configurar feed customizado
 
 ### Incident Management Platform (TheHive)
 
+- [x] Fazer a VM
 - [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [ ] Instalar TheHive
 - [ ] Instalar Cortex e integrar com TheHive
@@ -177,13 +191,19 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Velociraptor Server
 
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar Velociraptor Server
-- [ ] Instalar agente em todos os endpoints Windows
-- [ ] Verificar conectividade de todas as redes
+- [x] Fazer a VM
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar Velociraptor Server
+- [x] Instalar agente em todos os endpoints Windows
+	- [x] PC01
+	- [x] PC02
+	- [x] PC03
+	- [x] PC04
+- [x] Verificar conectividade de todas as redes
 
 ### SIEM (Splunk ou Elastic)
 
+- [x] Fazer a VM
 - [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [ ] Instalar Splunk ou Elastic
 - [ ] Configurar integração AlienVault OTX (API key)
@@ -194,6 +214,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### iRedMail Server ou Exchange (DMZ - 192.168.20.0/24)
 
+- [ ] Fazer a VM
 - [ ] Instalar Linux ou Windows
 - [ ] Instalar iRedMail ou Exchange
 - [ ] Escolher e configurar domínio de e-mail
@@ -208,6 +229,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Intrusion Detection System
 
+- [ ] Fazer a VM
 - [ ] Instalar Debian (recomendado)
 - [ ] Instalar Suricata ou Snort
 - [ ] Activar feeds (se Suricata):
@@ -223,6 +245,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### PC03 (Endpoint Brussels)
 
+- [x] Fazer a VM
 - [x] Mete no domínio black.internal
 - [x] Instala as RSAT Tools
 
@@ -231,6 +254,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### PfSense
 
+- [x] Fazer a VM
 - [x] Configurar DHCP para rede 10.3.3.0/24
 - [x] Configurar ligação site-to-site OpenVPN com Durham
 - [x] Configurar rotas e firewall rules
@@ -238,6 +262,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Active Directory Domain Controller
 
+- [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar domínio defense.internal
 - [x] Mete os forwarders
@@ -248,6 +273,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Vulnerability Management (OpenVAS/Nessus + DefectDojo)
 
+- [ ] Fazer a VM
 - [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+/Windows
 - [ ] Instalar scanner (OpenVAS ou Nessus)
 - [ ] Instalar DefectDojo
@@ -261,6 +287,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Trellix ePolicyOrchestrator
 
+- [ ] Fazer a VM
 - [ ] Instalar Windows Server 2022
 - [ ] Instalar SQL Server Enterprise 2019
 - [ ] Criar utilizador cybersqladmin
@@ -284,6 +311,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### WAZUH - Security Configuration Assessment
 
+- [ ] Fazer a VM
 - [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [ ] Instalar WAZUH server
 - [ ] Activar Vulnerability Management
@@ -292,6 +320,7 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### Apache Web Server (DMZ - 192.168.30.0/24)
 
+- [ ] Fazer a VM
 - [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [ ] Instalar Apache2
 - [ ] Configurar [www.defense.com](http://www.defense.com) e [www.disaster.com](http://www.disaster.com)
@@ -310,7 +339,8 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### PC04 (Endpoint Oslo)
 
-- [ ] Mete no domínio defense.internal
+- [x] Fazer a VM
+- [x] Mete no domínio defense.internal
  ---
 
 ## Exercício de Simulação de Ataque e Resposta a Incidentes
