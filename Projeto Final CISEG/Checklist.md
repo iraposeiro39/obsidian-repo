@@ -1,6 +1,7 @@
 # Checklist de Implementação
-Mete conditional forwarders em todas as ADs
 Desativa o IPv6 em todas as máquinas Windows
+Retira DNS das pfsenses das maquinas
+Agrupar as merdas do wazuh
 ## Durham
 ### PfSense One & Two (Firewalls)
 
@@ -67,7 +68,7 @@ Desativa o IPv6 em todas as máquinas Windows
 - [x] Instalar Certificate Services com web enrollment
 - [x] Configurar emissão automática de certificados para computadores e utilizadores AD
 - [x] Verificar hierarquia correcta dos certificados (PKI -> RootCA)
-- [ ] Emitir certificados para todas as aplicações web
+- [x] Emitir certificados para todas as aplicações web
 
 ### Veeam Backup Server
 
@@ -86,7 +87,7 @@ Desativa o IPv6 em todas as máquinas Windows
 - [x] Instalar Rocky Linux ou RHEL
 - [x] Instalar e configurar Zabbix Server
 - [x] Criar todas as entradas no zabbix
-- [ ] Enrollar todos os servidores de Durham, Brussels e Oslo
+- [x] Enrollar todos os servidores de Durham, Brussels e Oslo
 	- [x] DC01_DH
 	- [x] DC02_DH
 	- [x] WDS_DH
@@ -94,46 +95,47 @@ Desativa o IPv6 em todas as máquinas Windows
 	- [x] PKI_DH
 	- [x] VEEAM_DH
 	- [x] ADCore_BR
-	- [ ] MISP_BR
-	- [ ] IMS_BR
-	- [ ] Velociraptor_BR
-	- [ ] SIEM_BR
+	- [x] MISP_BR
+	- [x] IMP_BR
+	- [x] Velociraptor_BR
+	- [x] SIEM_BR
 	- [x] AD_OL
-	- [ ] VulnMgmt_OL
-	- [ ] Trellix_OL
-	- [ ] Wazuh_OL
-- [ ] Configurar monitorização de disponibilidade, performance e recursos
+	- [x] VulnMgmt_OL
+	- [x] Trellix_OL
+	- [x] Wazuh_OL
+	- [x] DC01_BR
+- [x] Configurar monitorização de disponibilidade, performance e recursos
 
 ### Web Server IIS (DMZ - 192.168.10.0/24)
 
 - [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
-- [ ] Configurar IIS para [www.black.pt](http://www.black.pt) e [www.arrow.com](http://www.arrow.com)
-- [ ] Usar apenas TLS 1.2 (obrigatório) e TLS 1.3 (opcional)
-- [ ] Usar apenas ciphers fortes
-- [ ] Activar HSTS
-- [ ] Obter certificados válidos do PKI server
-- [ ] Redireccionamento automático HTTP -> HTTPS
-- [ ] Bloquear todas as portas excepto 80 e 443
-- [ ] Ligar apenas ao WAF (rede 192.168.11.0/24)
+- [x] Configurar IIS para [www.black.pt](http://www.black.pt) e [www.arrow.com](http://www.arrow.com)
+- [x] Usar apenas TLS 1.2 (obrigatório) e TLS 1.3 (opcional)
+- [x] Usar apenas ciphers fortes
+- [x] Activar HSTS
+- [x] Obter certificados válidos do PKI server
+- [x] Redireccionamento automático HTTP -> HTTPS
+- [x] Bloquear todas as portas excepto 80 e 443
+- [x] Ligar apenas ao WAF (rede 192.168.11.0/24)
 
 ### Web Application Firewall (DMZ)
 
 - [x] Fazer a VM
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar ModSecurity com OWASP Core Rule Sets actualizados
-- [ ] Configurar modo de bloqueio (NÃO DetectionOnly)
+- [x] Instalar ModSecurity com OWASP Core Rule Sets actualizados
+- [x] Configurar modo de bloqueio (NÃO DetectionOnly)
 - [ ] Testar detecção e bloqueio de vulnerabilidades web
 
 ### Windows 10/11 Endpoints (PC01, PC02)
 
 - [x] Fazer as VMs
-- [ ] Implementar Microsoft Security Baseline via GPO
+- [x] Implementar Microsoft Security Baseline via GPO
 - [x] Bloquear command line, registry e control panel para não-admins
 - [x] Configurar background desktop padrão
 - [ ] Instalar e configurar Sysmon (enviar logs para SIEM)
 - [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
-- [ ] Instalar WAZUH agent
+- [x] Instalar WAZUH agent
 - [ ] Instalar Trellix Endpoint Security completo:
     - [ ] Endpoint Security
     - [ ] Threat Prevention
@@ -266,7 +268,6 @@ Desativa o IPv6 em todas as máquinas Windows
 - [x] Instalar Windows Server 2019/2022/2025
 - [x] Configurar domínio defense.internal
 - [x] Mete os forwarders
-- [ ] Criar o user cybersqladmin
 - [x] Activar DNSSEC em todos os domínios e subdomínios
 - [x] Criar GPO para forçar DNSSEC nos endpoints
 
@@ -311,31 +312,47 @@ Desativa o IPv6 em todas as máquinas Windows
 
 ### WAZUH - Security Configuration Assessment
 
-- [ ] Fazer a VM
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar WAZUH server
-- [ ] Activar Vulnerability Management
-- [ ] Instalar agente em todos endpoints e servidores
-- [ ] Verificar SCA (máximo 212 falhas ou justificar por escrito)
+- [x] Fazer a VM
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar WAZUH server
+- [x] Activar Vulnerability Management
+- [x] Instalar agente em todos endpoints e servidores
+	- [x] DC01_DH
+	- [x] DC02_DH
+	- [x] WDS_DH
+	- [x] RootCA_DH
+	- [x] PKI_DH
+	- [x] VEEAM_DH
+	- [x] ADCore_BR
+	- [x] MISP_BR
+	- [x] IMP_BR
+	- [x] Velociraptor_BR
+	- [x] SIEM_BR
+	- [x] AD_OL
+	- [x] VulnMgmt_OL
+	- [x] Trellix_OL
+	- [x] Wazuh_OL
+	- [x] DC01_BR
+- [x] Verificar SCA (máximo 212 falhas ou justificar por escrito)
 
 ### Apache Web Server (DMZ - 192.168.30.0/24)
 
-- [ ] Fazer a VM
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar Apache2
-- [ ] Configurar [www.defense.com](http://www.defense.com) e [www.disaster.com](http://www.disaster.com)
-- [ ] Obter certificados digitais válidos
-- [ ] Configurar ciphers fortes (lista recomendada fornecida)
-- [ ] Usar TLS 1.2 e TLS 1.3
-- [ ] Desactivar SSL3, TLS1.0, TLS1.1
-- [ ] Activar HSTS
-- [ ] Configurar página de erro customizada
-- [ ] Activar X-Frame-Options
-- [ ] Activar X-XSS-Protection
-- [ ] Activar protecções de cookies (HttpOnly, Secure, SameSite)
-- [ ] Alterar ServerTokens
-- [ ] Desactivar Server Signatures
-- [ ] Instalar ModSecurity com OWASP CRS em modo de bloqueio
+- [x] Fazer a VM
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar Apache2
+- [x] Configurar [www.defense.com](http://www.defense.com) e [www.disaster.com](http://www.disaster.com)
+- [x] Obter certificados digitais válidos
+- [x] Configurar ciphers fortes (lista recomendada fornecida)
+- [x] Usar TLS 1.2 e TLS 1.3
+- [x] Desactivar SSL3, TLS1.0, TLS1.1
+- [x] Activar HSTS
+- [x] Configurar página de erro customizada
+- [x] Activar X-Frame-Options
+- [x] Activar X-XSS-Protection
+- [x] Activar protecções de cookies (HttpOnly, Secure, SameSite)
+- [x] Alterar ServerTokens
+- [x] Desactivar Server Signatures
+- [x] Instalar ModSecurity com OWASP CRS em modo de bloqueio
 
 ### PC04 (Endpoint Oslo)
 
