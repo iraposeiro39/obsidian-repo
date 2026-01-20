@@ -133,8 +133,8 @@ Agrupar as merdas do wazuh
 - [x] Implementar Microsoft Security Baseline via GPO
 - [x] Bloquear command line, registry e control panel para não-admins
 - [x] Configurar background desktop padrão
-- [ ] Instalar e configurar Sysmon (enviar logs para SIEM)
-- [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
+- [x] Instalar e configurar Sysmon (enviar logs para SIEM)
+- [x] Instalar Splunk Universal Forwarder ou Elastic Agent
 - [x] Instalar WAZUH agent
 - [ ] Instalar Trellix Endpoint Security completo:
     - [ ] Endpoint Security
@@ -210,30 +210,32 @@ Agrupar as merdas do wazuh
 - [x] Instalar Splunk ou Elastic
 - [x] Configurar integração AlienVault OTX (API key)
 - [x] Configurar integração AbuseCH (API key)
-- [ ] Configurar recepção de logs Sysmon dos Windows
+- [x] Configurar recepção de logs Sysmon dos Windows
 - [ ] Configurar recepção de logs Suricata do IDS
 - [ ] Instalar agentes em todos os servidores e clientes
+	- [x] DC01_DH
+	- [x] DC02_DH
+	- [x] RootCA_DH
+	- [x] PKI_DH
+	- [x] WDS_DH
+	- [x] VEEAM_DH
+	- [x] Zabbix_DH
 	- [x] PC01_DH
-	- [ ] PC02_DH
-	- [ ] PC03_BR
-	- [ ] PC04_OL
-	- [ ] DC01_DH
-	- [ ] DC02_DH
-	- [ ] WDS_DH
-	- [ ] Zabbix_DH
-	- [ ] RootCA_DH
-	- [ ] PKI_DH
-	- [ ] VEEAM_DH
-	- [ ] ADCore_BR
-	- [ ] MISP_BR
-	- [ ] IMP_BR
-	- [ ] Velociraptor_BR
-	- [ ] SIEM_BR
-	- [ ] AD_OL
-	- [ ] VulnMgmt_OL
-	- [ ] Trellix_OL
-	- [ ] Wazuh_OL
-	- [ ] DC01_BR
+	- [x] PC02_DH
+	- [x] ADCore_BR
+	- [x] IMP_BR
+	- [x] SIEM_BR
+	- [x] Velociraptor_BR
+	- [x] MISP_BR
+	- [x] PC03_BR
+	- [ ] MAIL_BR
+	- [ ] IDS_BR (Suricata)
+	- [x] AD_OL
+	- [x] Wazuh_OL
+	- [x] VulnMgmt_OL
+	- [x] Trellix_OL
+	- [x] PC04_OL
+	- [x] DC01_BR
 
 ### iRedMail Server ou Exchange (DMZ - 192.168.20.0/24)
 

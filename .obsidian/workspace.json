@@ -35,8 +35,7 @@
               "title": "Checklist"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,10 +205,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f8305cea10b8d9f",
+  "active": "4555b251812de9c1",
   "lastOpenFiles": [
-    "Projeto Final CISEG/IPs.md",
     "Projeto Final CISEG/Checklist.md",
+    "Projeto Final CISEG/IPs.md",
     "conflict-files-obsidian-git.md",
     "Projeto Final CISEG/Topologia Ips.md",
     "Projeto Final CISEG",
