@@ -208,11 +208,32 @@ Agrupar as merdas do wazuh
 - [x] Fazer a VM
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [x] Instalar Splunk ou Elastic
-- [ ] Configurar integração AlienVault OTX (API key)
-- [ ] Configurar integração AbuseCH (API key)
+- [x] Configurar integração AlienVault OTX (API key)
+- [x] Configurar integração AbuseCH (API key)
 - [ ] Configurar recepção de logs Sysmon dos Windows
 - [ ] Configurar recepção de logs Suricata do IDS
 - [ ] Instalar agentes em todos os servidores e clientes
+	- [x] PC01_DH
+	- [ ] PC02_DH
+	- [ ] PC03_BR
+	- [ ] PC04_OL
+	- [ ] DC01_DH
+	- [ ] DC02_DH
+	- [ ] WDS_DH
+	- [ ] Zabbix_DH
+	- [ ] RootCA_DH
+	- [ ] PKI_DH
+	- [ ] VEEAM_DH
+	- [ ] ADCore_BR
+	- [ ] MISP_BR
+	- [ ] IMP_BR
+	- [ ] Velociraptor_BR
+	- [ ] SIEM_BR
+	- [ ] AD_OL
+	- [ ] VulnMgmt_OL
+	- [ ] Trellix_OL
+	- [ ] Wazuh_OL
+	- [ ] DC01_BR
 
 ### iRedMail Server ou Exchange (DMZ - 192.168.20.0/24)
 
@@ -274,10 +295,10 @@ Agrupar as merdas do wazuh
 
 ### Vulnerability Management (OpenVAS/Nessus + DefectDojo)
 
-- [ ] Fazer a VM
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+/Windows
-- [ ] Instalar scanner (OpenVAS ou Nessus)
-- [ ] Instalar DefectDojo
+- [x] Fazer a VM
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+/Windows
+- [x] Instalar scanner (OpenVAS ou Nessus)
+- [x] Instalar DefectDojo
 - [ ] Actualizar feeds de vulnerabilidades
 - [ ] Configurar scan agendado regular
 - [ ] Integrar scanner com DefectDojo
