@@ -2,13 +2,15 @@
 Desativa o IPv6 em todas as máquinas Windows
 Retira DNS das pfsenses das maquinas
 Agrupar as merdas do wazuh
+Desliga a FW1 no arrow e testa merdas
+Mete tags nas maquinas do elastic
 ## Durham
 ### PfSense One & Two (Firewalls)
 
 - [x] Fazer as VMs
 - [x] Configurar DHCP para rede 10.0.0.0/24 (mínimo 100 computadores)
 - [x] Configurar redundância com failover usando CARP
-- [ ] Configurar OpenVPN com autenticação RADIUS para acesso remoto
+- [x] Configurar OpenVPN com autenticação RADIUS para acesso remoto
 - [x] Configurar site-to-site OpenVPN para Oslo
 - [x] Configurar IPSec para Brussels
 - [x] Usar AES 256 bits (simétrica) e RSA 4096 bits (assimétrica)
@@ -175,21 +177,21 @@ Agrupar as merdas do wazuh
 - [x] Instalar MISP com feeds actualizados
 - [x] Activar feeds de IPs e domínios maliciosos
 - [x] Gerar blocklist para PfSense Durham
-- [ ] Integrar com Incident Management Platform
-- [ ] Configurar forwarding de IOCs
-- [ ] Configurar feed customizado
+- [x] Integrar com Incident Management Platform
+- [x] Configurar forwarding de IOCs
+- [ ] Configurar feed customizado (CAGA NISTO)
 
 ### Incident Management Platform (TheHive)
 
 - [x] Fazer a VM
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar TheHive
-- [ ] Instalar Cortex e integrar com TheHive
-- [ ] Activar analyzers VirusTotal e outros relevantes
-- [ ] Criar template de caso para tipo de ataque específico
-- [ ] Configurar ingestão automática de alertas do SIEM
-- [ ] Configurar ingestão de alertas IDS/IPS
-- [ ] Testar enriquecimento de indicadores
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar TheHive
+- [x] Instalar Cortex e integrar com TheHive
+- [x] Activar analyzers VirusTotal e outros relevantes
+- [x] Criar template de caso para tipo de ataque específico
+- [ ] Configurar ingestão automática de alertas do SIEM  (CAGA NISTO)
+- [ ] Configurar ingestão de alertas IDS/IPS  (CAGA NISTO)
+- [x] Testar enriquecimento de indicadores
 
 ### Velociraptor Server
 
@@ -209,9 +211,9 @@ Agrupar as merdas do wazuh
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [x] Instalar Splunk ou Elastic
 - [x] Configurar integração AlienVault OTX (API key)
-- [x] Configurar integração AbuseCH (API key)
+- [x] Configurar integração AbuseCH (API key)Durham
 - [x] Configurar recepção de logs Sysmon dos Windows
-- [ ] Configurar recepção de logs Suricata do IDS
+- [ ] Configurar recepção de logs Suricata do IDS 
 - [ ] Instalar agentes em todos os servidores e clientes
 	- [x] DC01_DH
 	- [x] DC02_DH
@@ -228,7 +230,7 @@ Agrupar as merdas do wazuh
 	- [x] Velociraptor_BR
 	- [x] MISP_BR
 	- [x] PC03_BR
-	- [ ] MAIL_BR
+	- [x] MAIL_BR
 	- [ ] IDS_BR (Suricata)
 	- [x] AD_OL
 	- [x] Wazuh_OL
@@ -239,34 +241,34 @@ Agrupar as merdas do wazuh
 
 ### iRedMail Server ou Exchange (DMZ - 192.168.20.0/24)
 
-- [ ] Fazer a VM
-- [ ] Instalar Linux ou Windows
-- [ ] Instalar iRedMail ou Exchange
-- [ ] Escolher e configurar domínio de e-mail
-- [ ] Configurar DNS público:
-    - [ ] DKIM
-    - [ ] DMARC
-    - [ ] SPF
-    - [ ] MX records
-    - [ ] A records
-- [ ] Testar acesso via Outlook e Thunderbird
-- [ ] Notificar equipa de auditoria do domínio escolhido
+- [x] Fazer a VM
+- [x] Instalar Linux ou Windows
+- [x] Instalar iRedMail ou Exchange
+- [x] Escolher e configurar domínio de e-mail
+- [x] Configurar DNS público:
+    - [x] DKIM
+    - [x] DMARC
+    - [x] SPF
+    - [x] MX records
+    - [x] A records
+- [x] Testar acesso via Outlook e Thunderbird
+- [x] Notificar equipa de auditoria do domínio escolhido
 
 ### Intrusion Detection System
 
-- [ ] Fazer a VM
-- [ ] Instalar Debian (recomendado)
-- [ ] Instalar Suricata ou Snort
-- [ ] Activar feeds (se Suricata):
-    - [ ] et/open
-    - [ ] malsilo/win-malware
-    - [ ] stamus/lateral
-    - [ ] tgreen/hunting
-    - [ ] etnetera/aggressive
-    - [ ] sslbl/ja3-fingerprints
-    - [ ] sslbl/ssl-fp-blacklist
-    - [ ] oisf/trafficid
-- [ ] Enviar logs para SIEM
+- [x] Fazer a VM
+- [x] Instalar Debian (recomendado)
+- [x] Instalar Suricata ou Snort
+- [x] Activar feeds (se Suricata):
+    - [x] et/open
+    - [x] malsilo/win-malware
+    - [x] stamus/lateral
+    - [x] tgreen/hunting
+    - [x] etnetera/aggressive
+    - [x] sslbl/ja3-fingerprints
+    - [x] sslbl/ssl-fp-blacklist
+    - [x] oisf/trafficid
+- [ ] Enviar logs para SIEM (CAGA NISTO)
 
 ### PC03 (Endpoint Brussels)
 
@@ -294,20 +296,21 @@ Agrupar as merdas do wazuh
 - [x] Activar DNSSEC em todos os domínios e subdomínios
 - [x] Criar GPO para forçar DNSSEC nos endpoints
 
-
 ### Vulnerability Management (OpenVAS/Nessus + DefectDojo)
 
 - [x] Fazer a VM
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+/Windows
 - [x] Instalar scanner (OpenVAS ou Nessus)
 - [x] Instalar DefectDojo
-- [ ] Actualizar feeds de vulnerabilidades
-- [ ] Configurar scan agendado regular
-- [ ] Integrar scanner com DefectDojo
-- [ ] Centralizar gestão de vulnerabilidades
-- [ ] Gerar relatórios (máximo 1 mês de antiguidade)
-- [ ] Validar falsos positivos
-- [ ] Mitigar vulnerabilidades quando possível
+- [ ] DefectDojo
+	- [ ] Actualizar feeds de vulnerabilidades
+	- [ ] Validar falsos positivos
+	- [ ] Mitigar vulnerabilidades quando possível
+	- [ ] Centralizar gestão de vulnerabilidades
+- [ ] Nessus
+	- [ ] Configurar scan agendado regular
+	- [ ] Integrar scanner com DefectDojo
+	- [ ] Gerar relatórios (máximo 1 mês de antiguidade)
 
 ### Trellix ePolicyOrchestrator
 
@@ -381,8 +384,13 @@ Agrupar as merdas do wazuh
 
 - [x] Fazer a VM
 - [x] Mete no domínio defense.internal
- ---
 
+## Laptop01 & Kali Linux (Attacker)
+### Utilizar para testes de penetração e simulações de ataque
+
+- [x] Configurar VPN remota para Durham
+- [x] Testar acesso às redes ADM
+ ---
 ## Exercício de Simulação de Ataque e Resposta a Incidentes
 
 ### Emulação de Ataque
@@ -409,8 +417,3 @@ Agrupar as merdas do wazuh
 
 ---
 
-## Laptop01 & Kali Linux (Attacker)
-
-- [ ] Configurar VPN remota para Durham
-- [ ] Testar acesso às redes ADM
-- [ ] Utilizar para testes de penetração e simulações de ataque
