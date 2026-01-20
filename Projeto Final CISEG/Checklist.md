@@ -206,8 +206,8 @@ Agrupar as merdas do wazuh
 ### SIEM (Splunk ou Elastic)
 
 - [x] Fazer a VM
-- [ ] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
-- [ ] Instalar Splunk ou Elastic
+- [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
+- [x] Instalar Splunk ou Elastic
 - [ ] Configurar integração AlienVault OTX (API key)
 - [ ] Configurar integração AbuseCH (API key)
 - [ ] Configurar recepção de logs Sysmon dos Windows

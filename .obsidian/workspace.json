@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "2a541f24d7985f47",
+            "id": "8f8305cea10b8d9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9b1cb3316c119bb2",
@@ -207,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a541f24d7985f47",
+  "active": "8f8305cea10b8d9f",
   "lastOpenFiles": [
     "Projeto Final CISEG/IPs.md",
     "Projeto Final CISEG/Checklist.md",
