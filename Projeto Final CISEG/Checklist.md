@@ -158,9 +158,10 @@ METE AS GPOS QUE TU TIRASTE
 
 - [x] Configurar VPN remota para Durham
 - [x] Testar acesso às redes ADM
-- [ ] Instalar e configurar Sysmon (enviar logs para SIEM)
+- [x] Instalar e configurar Sysmon (enviar logs para SIEM)
 - [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
 - [ ] Instalar WAZUH agent
+- [ ] Instalar Zabbix
 
 ---
 ## Brussels
@@ -331,16 +332,16 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Instalar Windows Server 2022
 - [x] Instalar SQL Server Enterprise 2019
 - [x] Criar utilizador cybersqladmin
-- [ ] Instalar Trellix ePO
-- [ ] Sincronizar com todos os domínios (Durham, Brussels, Oslo)
-- [ ] Configurar deployment de:
-    - [ ] Trellix Endpoint Security
-    - [ ] Firewall
-    - [ ] Web Control
-    - [ ] Adaptive Threat Protection
-    - [ ] Threat Prevention
+- [x] Instalar Trellix ePO
+- [x] Sincronizar com todos os domínios (Durham, Brussels, Oslo)
+- [x] Configurar deployment de:
+    - [x] Trellix Endpoint Security
+    - [x] Firewall
+    - [x] Web Control
+    - [x] Adaptive Threat Protection
+    - [x] Threat Prevention
     - [ ] Data Loss Prevention
-    - [ ] Drive Encryption
+    - [x] Drive Encryption
 - [ ] Configurar DLP para bloquear impressão de:
     - [ ] BLACK ARROW SECRET
     - [ ] BLACK ARROW TOP SECRET
