@@ -23,8 +23,8 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Configurar certificação HTTPS
 - [x] Configurar IP blocklist a partir dos feeds do MISP
 - [ ] Bloquear domínios .ru e .cn
-- [ ] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
-- [ ] Deixar inicialmente em modo de monitorização
+- [x] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
+- [x] Deixar inicialmente em modo de monitorização
 
 ### Active Directory Domain Controller
 
@@ -132,7 +132,7 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+
 - [x] Instalar ModSecurity com OWASP Core Rule Sets actualizados
 - [x] Configurar modo de bloqueio (NÃO DetectionOnly)
-- [ ] Testar detecção e bloqueio de vulnerabilidades web
+- [x] Testar detecção e bloqueio de vulnerabilidades web
 
 ### Windows 10/11 Endpoints (PC01, PC02)
 
@@ -153,6 +153,14 @@ METE AS GPOS QUE TU TIRASTE
     - [ ] Drive Encryption
 - [x] Instalar Remote Server Administration Tools
 - [ ] Permitir que todos os utilizadores do grupo Cyber possam desencriptar o disco ao ligar o pc
+
+## Laptop01
+
+- [x] Configurar VPN remota para Durham
+- [x] Testar acesso às redes ADM
+- [ ] Instalar e configurar Sysmon (enviar logs para SIEM)
+- [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
+- [ ] Instalar WAZUH agent
 
 ---
 ## Brussels
@@ -389,12 +397,6 @@ METE AS GPOS QUE TU TIRASTE
 
 - [x] Fazer a VM
 - [x] Mete no domínio defense.internal
-
-## Laptop01 & Kali Linux (Attacker)
-### Utilizar para testes de penetração e simulações de ataque
-
-- [x] Configurar VPN remota para Durham
-- [x] Testar acesso às redes ADM
  ---
 ## Exercício de Simulação de Ataque e Resposta a Incidentes
 
