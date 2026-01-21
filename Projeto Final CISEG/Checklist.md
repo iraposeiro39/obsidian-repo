@@ -218,8 +218,8 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Configurar integração AlienVault OTX (API key)
 - [x] Configurar integração AbuseCH (API key)Durham
 - [x] Configurar recepção de logs Sysmon dos Windows
-- [ ] Configurar recepção de logs Suricata do IDS 
-- [ ] Instalar agentes em todos os servidores e clientes
+- [x] Configurar recepção de logs Suricata do IDS 
+- [x] Instalar agentes em todos os servidores e clientes
 	- [x] DC01_DH
 	- [x] DC02_DH
 	- [x] RootCA_DH
@@ -236,7 +236,7 @@ METE AS GPOS QUE TU TIRASTE
 	- [x] MISP_BR
 	- [x] PC03_BR
 	- [x] MAIL_BR
-	- [ ] IDS_BR (Suricata)
+	- [x] IDS_BR (Suricata)
 	- [x] AD_OL
 	- [x] Wazuh_OL
 	- [x] VulnMgmt_OL
@@ -319,10 +319,10 @@ METE AS GPOS QUE TU TIRASTE
 
 ### Trellix ePolicyOrchestrator
 
-- [ ] Fazer a VM
-- [ ] Instalar Windows Server 2022
-- [ ] Instalar SQL Server Enterprise 2019
-- [ ] Criar utilizador cybersqladmin
+- [x] Fazer a VM
+- [x] Instalar Windows Server 2022
+- [x] Instalar SQL Server Enterprise 2019
+- [x] Criar utilizador cybersqladmin
 - [ ] Instalar Trellix ePO
 - [ ] Sincronizar com todos os domínios (Durham, Brussels, Oslo)
 - [ ] Configurar deployment de:
