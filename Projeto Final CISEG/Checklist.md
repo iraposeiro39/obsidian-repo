@@ -4,6 +4,11 @@ Retira DNS das pfsenses das maquinas
 Agrupar as merdas do wazuh
 Desliga a FW1 no arrow e testa merdas
 Mete tags nas maquinas do elastic
+
+
+METE AS GPOS QUE TU TIRASTE
+
+
 ## Durham
 ### PfSense One & Two (Firewalls)
 
