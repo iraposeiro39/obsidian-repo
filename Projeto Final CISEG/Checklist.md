@@ -77,7 +77,7 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Verificar hierarquia correcta dos certificados (PKI -> RootCA)
 - [x] Emitir certificados para todas as aplicações web
 
-### Veeam Backup Server
+### Veeam Backup Server BORA CRLLLLLLLL
 
 - [x] Fazer a VM
 - [x] Instalar Windows Server 2019/2022/2025
@@ -87,6 +87,7 @@ METE AS GPOS QUE TU TIRASTE
 	- [x] PC02 (DH)
 	- [x] PC03 (BR)
 	- [x] PC04 (OL)
+	- [x] Laptop0
 
 ### Zabbix Monitoring Server
 
@@ -143,27 +144,26 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Instalar e configurar Sysmon (enviar logs para SIEM)
 - [x] Instalar Splunk Universal Forwarder ou Elastic Agent
 - [x] Instalar WAZUH agent
-- [ ] Instalar Trellix Endpoint Security completo:
-    - [ ] Endpoint Security
-    - [ ] Threat Prevention
-    - [ ] Web Control
-    - [ ] Firewall
-    - [ ] Adaptive Threat Protection
-    - [ ] Data Loss Prevention
-    - [ ] Drive Encryption
+- [x] Instalar Trellix Endpoint Security completo:
+    - [x] Endpoint Security
+    - [x] Threat Prevention
+    - [x] Web Control
+    - [x] Firewall
+    - [x] Adaptive Threat Protection
+    - [x] Data Loss Prevention
+    - [x] Drive Encryption
 - [x] Instalar Remote Server Administration Tools
-- [ ] Permitir que todos os utilizadores do grupo Cyber possam desencriptar o disco ao ligar o pc
+- [x] Permitir que todos os utilizadores do grupo Cyber possam desencriptar o disco ao ligar o pc
 
 ## Laptop01
 
 - [x] Configurar VPN remota para Durham
 - [x] Testar acesso às redes ADM
 - [x] Instalar e configurar Sysmon (enviar logs para SIEM)
-- [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
-- [ ] Instalar WAZUH agent
-- [ ] Instalar Zabbix
-- [ ] Instalar Velociraptor
-- [ ] Instalar Veeam
+- [x] Instalar Splunk Universal Forwarder ou Elastic Agent
+- [x] Instalar WAZUH agent
+- [x] Instalar Velociraptor
+- [x] Instalar Veeam
 
 ---
 ## Brussels
@@ -319,10 +319,10 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Instalar scanner (OpenVAS ou Nessus)
 - [x] Instalar DefectDojo
 - [ ] DefectDojo
-	- [ ] Actualizar feeds de vulnerabilidades
-	- [ ] Validar falsos positivos
-	- [ ] Mitigar vulnerabilidades quando possível
-	- [ ] Centralizar gestão de vulnerabilidades
+	- [x] Actualizar feeds de vulnerabilidades
+	- [x] Validar falsos positivos
+	- [x] Mitigar vulnerabilidades quando possível
+	- [x] Centralizar gestão de vulnerabilidades
 - [ ] Nessus
 	- [ ] Configurar scan agendado regular
 	- [ ] Integrar scanner com DefectDojo
@@ -342,15 +342,15 @@ METE AS GPOS QUE TU TIRASTE
     - [x] Web Control
     - [x] Adaptive Threat Protection
     - [x] Threat Prevention
-    - [ ] Data Loss Prevention
+    - [x] Data Loss Prevention
     - [x] Drive Encryption
-- [ ] Configurar DLP para bloquear impressão de:
-    - [ ] BLACK ARROW SECRET
-    - [ ] BLACK ARROW TOP SECRET
-    - [ ] BLACK ARROW
-    - [ ] ARROW TOP SECRET
-    - [ ] ARROW SECRET
-- [ ] Configurar excepções firewall para deployment
+- [x] Configurar DLP para bloquear impressão de:
+    - [x] BLACK ARROW SECRET
+    - [x] BLACK ARROW TOP SECRET
+    - [x] BLACK ARROW
+    - [x] ARROW TOP SECRET
+    - [x] ARROW SECRET
+- [x] Configurar excepções firewall para deployment
 
 ### WAZUH - Security Configuration Assessment
 
