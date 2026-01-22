@@ -162,6 +162,8 @@ METE AS GPOS QUE TU TIRASTE
 - [ ] Instalar Splunk Universal Forwarder ou Elastic Agent
 - [ ] Instalar WAZUH agent
 - [ ] Instalar Zabbix
+- [ ] Instalar Velociraptor
+- [ ] Instalar Veeam
 
 ---
 ## Brussels
