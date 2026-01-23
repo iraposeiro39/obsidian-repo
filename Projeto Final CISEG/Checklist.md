@@ -1,13 +1,16 @@
 # Checklist de Implementação
 Desativa o IPv6 em todas as máquinas Windows
+
 Retira DNS das pfsenses das maquinas
+
 Agrupar as merdas do wazuh
+
 Desliga a FW1 no arrow e testa merdas
+
 Mete tags nas maquinas do elastic
 
-
-METE AS GPOS QUE TU TIRASTE
-
+GPO Wallpaper
+Vai ajeitar as gpos
 
 ## Durham
 ### PfSense One & Two (Firewalls)
@@ -22,7 +25,7 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Configurar Rotas estáticas
 - [x] Configurar certificação HTTPS
 - [x] Configurar IP blocklist a partir dos feeds do MISP
-- [ ] Bloquear domínios .ru e .cn
+- [x] Bloquear domínios .ru e .cn
 - [x] Instalar e configurar IDS/IPS (Snort ou Suricata) com todas as assinaturas gratuitas
 - [x] Deixar inicialmente em modo de monitorização
 
@@ -148,7 +151,7 @@ METE AS GPOS QUE TU TIRASTE
     - [x] Endpoint Security
     - [x] Threat Prevention
     - [x] Web Control
-    - [x] Firewall
+    - [ ] Firewall
     - [x] Adaptive Threat Protection
     - [x] Data Loss Prevention
     - [x] Drive Encryption
@@ -318,7 +321,7 @@ METE AS GPOS QUE TU TIRASTE
 - [x] Instalar Debian 12+/Ubuntu 22.04+/RHEL 9+/Windows
 - [x] Instalar scanner (OpenVAS ou Nessus)
 - [x] Instalar DefectDojo
-- [ ] DefectDojo
+- [x] DefectDojo
 	- [x] Actualizar feeds de vulnerabilidades
 	- [x] Validar falsos positivos
 	- [x] Mitigar vulnerabilidades quando possível
